@@ -1,15 +1,104 @@
+/* General Body Styles */
 body {
-font-family: Arial; margin: 0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+    margin: 0;
+    background-color: #f4f7f6; /* Soft off-white background */
+    color: #333;
+    line-height: 1.6;
 }
-header { background: black; color: white;
-text-align: center; padding: 20px;
+
+/* Header with a Modern Gradient */
+header { 
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); 
+    color: white;
+    text-align: center; 
+    padding: 60px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
-section { padding: 20px;
+
+header h1 {
+    margin: 0;
+    font-size: 2.8em;
+    letter-spacing: 1px;
 }
+
+header p {
+    font-size: 1.2em;
+    font-weight: 300;
+    opacity: 0.9;
+    margin-top: 10px;
+}
+
+/* Section Formatting */
+section { 
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Stylish Section Titles */
+h2 {
+    color: #1e3c72;
+    border-bottom: 3px solid #2a5298;
+    display: inline-block;
+    padding-bottom: 8px;
+    margin-bottom: 30px;
+}
+
+/* Image Styling */
+#home img {
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.3s ease;
+}
+
+#home img:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+}
+
+/* Team Member Cards */
+#team {
+    text-align: center; /* Centers the heading and cards */
+}
+
 .member {
-border: 1px solid gray; padding: 10px; margin: 10px;
+    background: white;
+    border-radius: 12px;
+    padding: 25px; 
+    margin: 15px;
+    display: inline-block; /* Aligns them side by side */
+    width: 30%;
+    min-width: 250px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); /* Card shadow */
+    transition: all 0.3s ease; /* Smooth animation setup */
+    vertical-align: top;
 }
+
+/* Hover Effect for Team Cards */
+.member:hover {
+    transform: translateY(-10px); /* Lifts the card up */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+    border-bottom: 4px solid #2a5298; /* Adds a nice bottom accent */
+}
+
+.member h3 {
+    margin-top: 0;
+    color: #222;
+}
+
+.member p {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+/* Sleek Dark Footer */
 footer {
-background: black; color: white;
-text-align: center; padding: 10px;
+    background: #1a1a1a; 
+    color: #ccc;
+    text-align: center; 
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9em;
+    letter-spacing: 1px;
 }
