@@ -1,79 +1,96 @@
-
-/* Reset */
 body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f5f7fa;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
 }
 
-/* Header */
-header {
-    background: linear-gradient(90deg, #0a2540, #00d4ff);
+header { 
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); 
     color: white;
-    text-align: center;
-    padding: 20px;
+    text-align: center; 
+    padding: 60px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* Navigation */
-nav {
-    background: #0a2540;
-    text-align: center;
-    padding: 10px;
+header h1 {
+    margin: 0;
+    font-size: 2.8em;
+    letter-spacing: 1px;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #00d4ff;
-}
-
-/* Sections */
-section {
-    padding: 30px;
-    text-align: center;
-}
-
-/* Home Image */
-#home img {
-    border-radius: 10px;
+header p {
+    font-size: 1.2em;
+    font-weight: 300;
+    opacity: 0.9;
     margin-top: 10px;
 }
 
-/* About */
-#about {
-    background: white;
+section { 
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-/* Team Section */
-#team {
-    background: #eef2f7;
-}
-
-/* Team Members */
-#team div {
+h2 {
+    color: #1e3c72;
+    border-bottom: 3px solid #2a5298;
     display: inline-block;
-    background: white;
-    padding: 15px;
-    margin: 15px;
-    border-radius: 10px;
-    width: 200px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding-bottom: 8px;
+    margin-bottom: 30px;
 }
 
-#team img {
-    border-radius: 50%;
-    margin-bottom: 10px;
+#home img {
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
-/* Footer */
-footer {
-    background: #0a2540;
-    color: white;
+#home img:hover {
+    transform: scale(1.02);
+}
+
+#team {
     text-align: center;
-    padding: 10px;
+}
+
+.member {
+    background: white;
+    border-radius: 12px;
+    padding: 25px; 
+    margin: 15px;
+    display: inline-block;
+    width: 30%;
+    min-width: 250px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    vertical-align: top;
+}
+
+.member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    border-bottom: 4px solid #2a5298;
+}
+
+.member h3 {
+    margin-top: 0;
+    color: #222;
+}
+
+.member p {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+footer {
+    background: #1a1a1a; 
+    color: #ccc;
+    text-align: center; 
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9em;
+    letter-spacing: 1px;
 }
